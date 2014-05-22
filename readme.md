@@ -1,6 +1,6 @@
-# express playground
+# jortSort [jort.technology](http://jort.technology)
 
-This is just a base for a node app using express, jade, and stylus.
+sorting is over as we know it.
 
 ## dependencies
 
@@ -11,8 +11,8 @@ This is just a base for a node app using express, jade, and stylus.
 
 ## running it
 
-* `grunt test` to [jshint](http://www.jshint.com/) & [csslint](http://csslint.net/)
-* `node app.js` to run at `localhost:5678`
+* `grunt test` to hint/lint js/css
+* `grunt run` to run it
 
 ## made by jenn
 

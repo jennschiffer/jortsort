@@ -5,7 +5,6 @@ var nib = require('nib');
 
 // require route scripts
 var routes = require('./routes/index');
-var routesPage = require('./routes/page');
 
 // create express app
 var app = express();
@@ -33,7 +32,6 @@ app.use(express.static(__dirname + '/public'));
 
 // set up routes
 app.use('/', routes);
-app.use('/page', routesPage);
 
 // on `node app.js` app will run at localhost:5678
 app.listen('5678');
