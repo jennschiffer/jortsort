@@ -13,18 +13,24 @@ module.exports = function(grunt) {
         'public/js/*.js'
       ]
     },
-
     csslint: {
       all: {
         src: ['public/css/base.css']
       }
+    },
+    nodemon: {
+      dev: {
+        script: 'app.js'
+      }
     }
-
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-csslint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-nodemon');
 
   grunt.registerTask('test', ['jshint', 'csslint']);
+  grunt.registerTask('run', ['nodemon','watch']);
 
 };
