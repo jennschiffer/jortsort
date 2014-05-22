@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    title #{title} &bull; express playground
+    link(rel="stylesheet", href="/css/base.css")
+
+  body(id!="#{bodyID}")
+    header
+      h1 express playground
+
+    nav
+      ul
+        li
+          a(href="/") home
+        li
+          a(href="/page") example page
+
+    .container
+      block content
+
+    footer
+      p 
+        made by 
+        a(href="http://twitter.com/jennschiffer") jenn schiffer
+        |  &bull; 
+        a(href="http://github.com/jennschiffer/express-playground") fork it on githugs

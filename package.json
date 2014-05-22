@@ -1,0 +1,17 @@
+{
+  "name": "express-playground",
+  "description": "just a base for a node app using express, jade, and stylus",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.x",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-csslint": "~0.2.0"
+  }
+}
