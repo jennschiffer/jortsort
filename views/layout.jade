@@ -2,18 +2,21 @@ doctype html
 html(lang="en")
   head
     title #{title} &bull; jortSort
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Varela+Round")
     link(rel="stylesheet", href="/css/base.css")
 
   body(id!="#{bodyID}")
     header
       h1 jortSort
 
-    nav
-      ul
-        li
-          a(href="/") home
-        li
-          a(href="#about") about
+      nav
+        ul
+          li
+            a(href="#what") what
+          li
+            a(href="#why") why
+          li
+            a(href="#how") how
 
     .container
       block content
@@ -23,4 +26,5 @@ html(lang="en")
         made by 
         a(href="http://twitter.com/jennschiffer") jenn schiffer
         |  &bull; 
-        a(href="http://github.com/jennschiffer/express-playground") fork it on githugs
+        a(href="http://github.com/jennschiffer/jortsort") get it on github
+    script(src="/js/mylib-min.js")
