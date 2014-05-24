@@ -1,22 +1,38 @@
 global-reset()
 
+color-teal = #203F4A
+color-denim = #5EA5B5
+color-denim-shadow = #5397A1
+color-red = #D04B58
+color-belt = #764D2A
+color-belt-dark = #4D331D
+color-gray = #929291
+color-beige = #fffff3
+
 body
-  font-family: 'Varela Round', sans-serif
-  background-color: #fffff3
-  text-align: center
+  font-family 'Varela Round', sans-serif
+  background-color color-beige
+  text-align center
+  color color-belt-dark
 
 h1
   font-weight bold
-  font-size 2em
+  font-size 4em
+  color color-beige
+  text-shadow 3px 3px 0 color-red
 
 h2
   font-weight bold
   margin 1em 0  
   font-size 1.5em
+  color color-teal
 
 header
-  background-color: dodgerblue
-  padding: 20px
+  background-color #81b9c5
+  padding 20px
+
+  img
+    width 350px
 
 nav ul li
   display inline-block
@@ -28,10 +44,20 @@ nav ul li
       color white
 
 .container
-  padding 10px
   
 p
   margin 1em 0
+
+#what
+  height 300px
+
+#why
+  background-image url('/assets/clothesline.jpg')
+  background-position 50% 0px
+  height 600px
+
+#how
+  height 300px
 
 footer
   font-size .8em

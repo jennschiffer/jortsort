@@ -7,7 +7,10 @@ html(lang="en")
 
   body(id!="#{bodyID}")
     header
+      img(src="/assets/jorts.png")
       h1 jortSort
+
+      h2 a framework for sorting ambitious web applications
 
       nav
         ul
@@ -27,4 +30,9 @@ html(lang="en")
         a(href="http://twitter.com/jennschiffer") jenn schiffer
         |  &bull; 
         a(href="http://github.com/jennschiffer/jortsort") get it on github
-    script(src="/js/mylib-min.js")
+    #script(src="/js/mylib-min.js")
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+    script(src="/js/stellar.min.js")
+    script
+      $(window).stellar(); 
+      $('a[href*=#]:not([href=#])').click(function() { if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {var target = $(this.hash);target = target.length ? target : $('[name=' + this.hash.slice(1) +']');if (target.length) { $('html,body').animate({ scrollTop: target.offset().top }, 1000);  return false;  } } });
