@@ -4,7 +4,7 @@
 
 sorting is over as we know it. more info soon.
 
-`var jortSort = function( array ) {
+<code>var jortSort = function( array ) {
   
   // sort the array
   var originalArray = array.slice(0);
@@ -16,7 +16,7 @@ sorting is over as we know it. more info soon.
   }
   
   return true;
-};`
+};</code>
 
 
 ## literally made with blood and tears
