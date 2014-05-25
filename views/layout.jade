@@ -7,19 +7,19 @@ html(lang="en")
 
   body(id!="#{bodyID}")
     header
-      img(src="/assets/jorts.png")
-      h1 jortSort
+      .content
+        img(src="/assets/jorts.png")
+        h1 jortSort
+        h2 a framework for sorting ambitious web applications
 
-      h2 a framework for sorting ambitious web applications
-
-      nav
-        ul
-          li
-            a(href="#what") what
-          li
-            a(href="#why") why
-          li
-            a(href="#how") how
+    nav(data-stellar-background-ratio="0.5")
+      ul
+        li
+          a(href="#what") what is jortSort?
+        li
+          a(href="#how") how does it work?
+        li
+          a(href="#where") where do you get it?
 
     .container
       block content

@@ -1,12 +1,38 @@
 extend layout
 
 block content
+
+  #why
+    .info
+      h4 Sorting is broken.
+
+      ul
+        li they can literally take forever to run
+        li there are so many algorithms to choose from
+        li we have to write more code, which means inefficiency
+
   
-  div#what 
-    h2 what?
+  #what(data-stellar-background-ratio="0.5")
+    .info.stellar
+      h2 jortSort isn't a sorting algorithm. It's a sorting <em>toolset</em>.
 
-  div#why(data-stellar-background-ratio="0.5")
-    h2 why?
+      .box
+        ul
+          li makes the user do the work (this is what recursion means, for you non-degree holders)
+          li guarantees efficiency because you don't have to sort ever again
 
-  div#how 
-    h2 how?
+  #how
+    .info
+      h4 How does jortSort work?
+
+      p jortSort checks if your inputs are sorted. If they aren't then you can let the user know they fucked up.
+      script(src="https://gist.github.com/jennschiffer/b544f8670f0d4b4863b8.js")
+
+  #where(data-stellar-background-ratio="0.5")
+    .info.stellar
+      h2 Where can you get jortSort?
+
+      .box
+        ul
+          li: a(href="http://github.com/jennschiffer/jortsort") http://github.com/jennschiffer/jortsort
+          li: code npm install jortsort
