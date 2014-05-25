@@ -1,20 +1,26 @@
-# jortSort [jort.technology](http://jort.technology)
+# jortSort 
 
-sorting is over as we know it.
+## [jort.technology](http://jort.technology)
 
-## dependencies
+sorting is over as we know it. more info soon.
 
-* [express](http://expressjs.com/) - node web app framework, using version 4 because "hash tag yo-lo"
-* [jade](http://jade-lang.com/) - templating engine
-* [stylus](http://learnboost.github.io/stylus/) - css preprocessor, compiled in `app.js`
-* [grunt](http://gruntjs.com/) - currently just used for jshint'ing & csslint'ing
+`var jortSort = function( array ) {
+  
+  // sort the array
+  var originalArray = array.slice(0);
+  array.sort( function(a,b){return a - b} );
 
-## running it
+  // compare to see if it was originally sorted
+  for (var i = 0; i &lt; originalArray.length; ++i) {
+    if (originalArray[i] !== array[i]) return false;
+  }
+  
+  return true;
+};`
 
-* `grunt test` to hint/lint js/css
-* `grunt run` to run it
 
-## made by jenn
+## literally made with blood and tears
 
-* [@jennschiffer](http://twitter.com/jennschiffer)
+* created by [@jennschiffer](http://twitter.com/jennschiffer)
 * email: jenn @ dotbiz.info (yes, this is a real email)
+* logo by [@isaacdurazo](http://twitter.com/isaacdurazo)
