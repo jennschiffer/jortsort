@@ -4,7 +4,7 @@
 
 sorting is over as we know it. more info soon.
 
-<code>var jortSort = function( array ) {
+<pre><code>var jortSort = function( array ) {
   
   // sort the array
   var originalArray = array.slice(0);
@@ -14,9 +14,9 @@ sorting is over as we know it. more info soon.
   for (var i = 0; i &lt; originalArray.length; ++i) {
     if (originalArray[i] !== array[i]) return false;
   }
-  
+
   return true;
-};</code>
+};</code></pre>
 
 
 ## literally made with blood and tears
