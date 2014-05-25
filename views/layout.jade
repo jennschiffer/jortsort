@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
   head
-    title #{title} &bull; jortSort
+    title jortSort &bull; for us, by us
     link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Varela+Round")
     link(rel="stylesheet", href="/css/base.css")
 
@@ -29,10 +29,10 @@ html(lang="en")
         made by 
         a(href="http://twitter.com/jennschiffer") jenn schiffer
         |  &bull; 
-        a(href="http://github.com/jennschiffer/jortsort") get it on github
+        a(href="http://github.com/jennschiffer/jortsort") github
     #script(src="/js/mylib-min.js")
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
     script(src="/js/stellar.min.js")
     script
       $(window).stellar(); 
-      $('a[href*=#]:not([href=#])').click(function() { if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {var target = $(this.hash);target = target.length ? target : $('[name=' + this.hash.slice(1) +']');if (target.length) { $('html,body').animate({ scrollTop: target.offset().top }, 1000);  return false;  } } });
+      $('a[href*=#]:not([href=#])').click(function() { if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {var target = $(this.hash);target = target.length ? target : $('[name=' + this.hash.slice(1) +']');if (target.length) { $('html,body').animate({ scrollTop: target.offset().top }, 5000);  return false;  } } });
