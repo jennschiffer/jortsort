@@ -4,20 +4,21 @@
 
 sorting is over as we know it. more info soon.
 
-<pre><code>var jortSort = function( array ) {
-  
+```js
+var jortSort = function( array ) {
+
   // sort the array
   var originalArray = array.slice(0);
   array.sort( function(a,b){return a - b} );
 
   // compare to see if it was originally sorted
-  for (var i = 0; i &lt; originalArray.length; ++i) {
+  for (var i = 0; i < originalArray.length; ++i) {
     if (originalArray[i] !== array[i]) return false;
   }
 
   return true;
-};</code></pre>
-
+};
+```
 
 ## literally made with blood and tears
 
