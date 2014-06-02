@@ -1,6 +1,6 @@
 {
-  "name": "express-playground",
-  "description": "just a base for a node app using express, jade, and stylus",
+  "name": "jortSort",
+  "description": "sort out your life, not your arrays",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
